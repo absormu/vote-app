@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <div className='flex flex-col place-items-center py-44 space-y-3'> 
         <h1 className='text-5xl font-bold'>Ayo Mulai Voting</h1>
         <h2 className='text-lg bg-zinc-100 px-3 py-1'>Web Voting No.1 Di Indonesia</h2>
-        <Image alt='Header' src={"/assets/header.svg"} width={274} height={243} />
+        <Image alt='Header' src={"/assets/Header.svg"} width={274} height={243} />
         <div className="space-x-10">
           <Button text="Buat Vote Baru" className='font-bold'/>
           <Button text="Ikutan Vote" type='secondary' className='font-bold'/>

@@ -4,8 +4,12 @@ import Image from 'next/image'
 import Button from '../components/Button'
 import Menu from '../components/Menu'
 import { LinkIcon, TrashIcon } from '@heroicons/react/24/solid'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
+
+  const router = useRouter()
+
   return (
     <div className="container mx-auto">
       <Head>
@@ -21,7 +25,7 @@ const Home: NextPage = () => {
         <h2 className='text-lg bg-zinc-100 px-3 py-1'>Web Voting No.1 Di Indonesia</h2>
         <Image alt='Header' src={"/assets/Header.svg"} width={274} height={243} />
         <div className="space-x-10">
-          <Button text="Buat Vote Baru" className='font-bold'/>
+          <Button text="Buat Vote Baru" className='font-bold' onClick={()=> router.push("/vote/create")}/>
           <Button text="Ikutan Vote" type='secondary' className='font-bold'/>
       </div>
       </div>

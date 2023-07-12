@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <Image alt='Header' src={"/assets/Header.svg"} width={274} height={243} />
         <div className="space-x-10">
           <Button text="Buat Vote Baru" className='font-bold' onClick={()=> router.push("/vote/create")}/>
-          <Button text="Ikutan Vote" type='secondary' className='font-bold'/>
+          <Button text="Ikutan Vote" type='secondary' className='font-bold' onClick={()=> router.push("/participant")}/>
       </div>
       </div>
 

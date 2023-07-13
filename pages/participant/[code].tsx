@@ -2,6 +2,7 @@ import   Head   from "next/head"
 import { useRouter } from "next/router"
 import Button from "../../components/Button"
 import CandidatItem from "../../components/CandidatItem"
+import CountDown from "../../components/CountDown/CountDown"
 import Menu from "../../components/Menu"
 
  
@@ -20,10 +21,10 @@ export default function DetailParticipant() {
       <Menu />
       
       <div>
-        <h1>Judul Voting</h1>
+        <h1 className="text-4xl mt-10 text-center">Judul Voting</h1>
 
         {/* Timer */}
-        <span>Timer</span>
+        <CountDown className="mt-10"/>
 
         {/* kandidat */}
         <div className="mt-10 space-y-3 mx-auto w-2/3">
@@ -35,7 +36,7 @@ export default function DetailParticipant() {
         </div>
         {/* button */}
         <div className="text-center mt-10">
-          <Button text="Kirim Vote Saya 🚀"/>
+          <Button className="my-10" text="Kirim Vote Saya 🚀"/>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import   Head   from "next/head"
 import { useRouter } from "next/router"
+import { showAlert } from "../../components/Alert"
 import Button from "../../components/Button"
 import CandidatItem from "../../components/CandidatItem"
 import CountDown from "../../components/CountDown/CountDown"
@@ -36,7 +37,9 @@ export default function DetailParticipant() {
         </div>
         {/* button */}
         <div className="text-center mt-10">
-          <Button className="my-10" text="Kirim Vote Saya 🚀"/>
+          <Button className="my-10" text="Kirim Vote Saya 🚀" onClick={() => showAlert({title: "Apakah kamu yakin ?", message: "Kamu akan memilih kandidat 1", positiveBtnText: "Ya", onPositiveClick() {
+            
+          },})}/>
         </div>
       </div>
     </div>
